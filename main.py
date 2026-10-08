@@ -1,6 +1,9 @@
-def main():
-    print("Hello from multi-agent-research-system!")
+from src.tools.tools import web_search, scrape_url
 
+# output = web_search("What is the capital of France?")
 
-if __name__ == "__main__":
-    main()
+# print(output)
+
+result = scrape_url.invoke({"url": "https://www.reddit.com/r/artificial"})
+
+print(result)
